@@ -1,0 +1,66 @@
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+.titulo {
+    font-size: 2.5em;
+    margin: 1%;
+}
+
+.titulo h1 {
+    font-size: 1.5em;
+}
+
+.titulo h2 {
+    font-size: 1.2em;
+}
+
+.titulo h3 {
+    font-size: 1.1em;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+header {
+    background-color: #5f89f7;
+    height: 5%;
+    width: 80%;
+    margin: 1%;
+    padding: 2%;
+}
+
+.striped-table {
+    border-collapse: collapse;
+    background-color: #3d85c6;
+}
+
+.striped-table th, .striped-table td {
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.striped-table tbody tr:nth-child(odd) {
+    background-color: #81c8ea;
+}
+
+body {
+    background-color: #2f323a;
+    padding-left: 5%;
+    color: #f3f3f3;
+}
+
+body p::first-letter {
+    text-transform: uppercase;
+}
