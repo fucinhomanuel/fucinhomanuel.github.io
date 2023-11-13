@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shinobi</title>
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <article>
+                <section class="titulo">
+                    <header>Shinobi Variant (5e Class)</header>
+                </section>
+                <h1>Shinobi com Braço Prostético</h1>
+                <p>Você é um Shinobi que perdeu seu braço em uma batalha, após isso colocou um braço prostético que vem com algumas ferramentas prostéticas que podem ser usado em batalhas para sua vantagem.</p>
+            </article>
+            <section class="build-rapida">
+                <h1>Criando um Shinobi</h1>
+                <h3>Build rápida</h3>
+                <p>Descrição maneira</p>
+            </section>
+            <section class="class-features">
+                <h3>Hit Points</h3>
+                <ul>
+                    <li>Hit Dice: 1d8 por nível de Shinobi</li>
+                    <li>Hit Points no 1st nível: 8 + modificador de Constituição</li>
+                    <li>Hit Points em níveis mais altos 1d8 (ou 5) + modificador de Constituição por nível de Shinobi depois do 1st</li>
+                </ul>
+                <h3>Proficiências</h3>
+                <ul>
+                    <li>Armadura: Light Armor</li>
+                    <li>Armas: Simple and Martial Weapons</li>
+                    <li>Ferramentas: Herbalism Kit, Poisoners kit, Disguise kit, and Forgery kit</li>
+                    <li>Saving Throws: Sabedoria e Destreza</li>
+                    <li>Skills: Escolha três entre Acrobatics, Athletics, History, Religion, Stealth, Slight of Hand, and Survival</li>
+                </ul>
+                <h3>Equipamentos</h3>
+                <ul>
+                    <li>Você começa com o seguinte equipamento, em adição ao equipamento garantido pelo seu background:</li>
+                    <li>(a) Katana ou (b) Wakizashi</li>
+                    <li>(a) Um Explorer's Pack ou (b) Dungeoneering Pack</li>
+                    <li>(a) 7 Shurikens ou (b) 4 Daggers</li>
+                    <li>Se você está usando Wealth, você tem 4d4 x 10gp de fundos.</li>
+                </ul>
+            </section>
+        </main>
+		<div class="tabelashinobi" id"tabela-shinobi">
+        <h2 id="tabela-shinobi">Tabela: Shinobi com Braço Prostético</h2>
+        <table class="striped-table">
+		
+            <thead>
+                <tr>
+                    <th class="level">Level</th>
+                    <th class="Bonus-de-Proficiencia">Bonus de Proficiência</th>
+                    <th class="Features">Features</th>
+                    <th class="Sneak-Attack">Sneak Attack</th>
+                    <th class="Max-Emblemas-Espirituais">Max Origamis das Almas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1st</td>
+                    <td>+2</td>
+                    <td>
+                        <a href="#sneak-attack">Sneak Attack</a>, <a href="#unarmored-defense">Unarmored Defense</a>, <a href="#shinobi-prosthetic">Shinobi Prosthetic</a>,
+                        <a href="#origami-da-alma">Origami da Alma</a>
+                    </td>
+                    <td>1d6</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>+2</td>
+                    <td><a href="#cunning-action">Cunning Action</a></td>
+                    <td>1d6</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>+2</td>
+                    <td><a href="#schooling-archetypes">Schooling Archetypes</a>, <a href="#combat-arts">Combat Arts</a></td>
+                    <td>2d6</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>+2</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a></td>
+                    <td>2d6</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>+3</td>
+                    <td><a href="#superior-posture">Superior Posture</a>, <a href="#extra-attack">Extra Attack</a>, <a href="#break-posture">Break Posture</a></td>
+                    <td>3d6</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>+3</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a>, <a href="#suppress-presence">Suppress Presence</a></td>
+                    <td>3d6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>+3</td>
+                    <td><a href="#schooling-archetypes">Schooling Archetypes</a> , <a href="#fighter-soul">Fighter Soul</a></td>
+                    <td>4d6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>+3</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a></td>
+                    <td>4d6</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>+4</td>
+                    <td><a href="#light-prayer">Light Prayer</a></td>
+                    <td>5d6</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>+4</td>
+                    <td><a href="#schooling-archetypes">Schooling Archetypes</a></td>
+                    <td>5d6</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>+4</td>
+                    <td><a href="#death-blow">Death Blow</a></td>
+                    <td>6d6</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>+4</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a></td>
+                    <td>6d6</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>+5</td>
+                    <td><a href="#shinobi-combat">Shinobi Combat</a></td>
+                    <td>7d6</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>+5</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a>, <a href="#fighter-soul">Fighter Soul</a> +</td>
+                    <td>7d6</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>+5</td>
+                    <td><a href="#schooling-archetypes">Schooling Archetypes</a></td>
+                    <td>8d6</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>+5</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a></td>
+                    <td>8d6</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>+6</td>
+                    <td><a href="#sharpen-sight">Sharpen Sight</a></td>
+                    <td>9d6</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>+6</td>
+                    <td><a href="#schooling-archetypes">Schooling Archetypes</a></td>
+                    <td>9d6</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>+6</td>
+                    <td><a href="#ability-score-improvement">Ability Score Improvement</a></td>
+                    <td>10d6</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>+6</td>
+                    <td><a href="#legendary-shinobi">Legendary Shinobi</a></td>
+                    <td>10d6</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+		</div>
+        <div class="prostethic-items" id="prostethic-items">
+            <section class="sneakattack" id="sneak-attack">
+                <h2>Sneak Attack</h2>
+                <p>
+                    Ataque surpresa Começando no 1º nível, você sabe como atacar sutilmente e explorar a distração do inimigo. Uma vez por turno, você pode causar 1d6 de dano extra a uma criatura que você atingiu com um ataque se tiver
+                    vantagem na jogada de ataque. O ataque deve usar sutileza ou arma de longo alcance.
+                </p>
+                <p>Você não precisa de vantagem na jogada de ataque se outro inimigo do alvo estiver a até 1,5 metro dele, esse inimigo não estiver incapacitado e você não tiver desvantagem na jogada de ataque.</p>
+                <p>A quantidade de dano extra aumenta conforme você ganha níveis nesta classe, conforme mostrado na coluna Ataque Furtivo da tabela Shinobi.</p>
+            </section>
+            <section class="unarmoreddefense" id="unarmored-defense">
+                <h2>Unarmored Defense</h2>
+                <p>
+                    A partir do 1º nível, seus reflexos e sentidos aguçados permitem que você bloqueie e desvie de ataques como se o comportamento fosse uma segunda natureza. Quando você não está usando armadura, sua Classe de Armadura é
+                    igual a 10 + modificador de Destreza + modificador de Sabedoria.
+                </p>
+            </section>
+            <section class="shinobiprosthetic" id="shinobi-prosthetic">
+                <h2>Shinobi Prosthetic</h2>
+                <p>
+                    A partir do 1º nível, você pode instalar ferramentas que modificam sua prótese shinobi. Essas ferramentas podem ser usadas gastando Origamis das Almas. Você pode instalar qualquer uma das seguintes ferramentas. As
+                    ferramentas requerem 10 minutos para serem instaladas e/ou trocadas. Você tem um slot de ferramenta e adquire outro no 8º nível e no 14º nível. Algumas de suas ferramentas protéticas (e recursos posteriores desta classe)
+                    exigem que seu alvo faça um teste de resistência para resistir aos efeitos do recurso. A CD do teste de resistência é calculada da seguinte forma:
+                </p>
+                <ul>
+                    <li>CD do seu salvamento Shinobi = 8 + seu bônus de proficiência + seu modificador de Sabedoria</li>
+                </ul>
+            </section>
+            <section class="divineabduction" id="divine-abduction">
+                <h3>Divine Abduction</h3>
+                <ul>
+                    <li>3 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Você cria um vento mágico brilhante como uma ação bônus e o lança em uma criatura que você possa ver a até 3 metros. Esta criatura deve ser bem sucedida em um teste de resistência de Força contra sua CD de resistência do
+                    Shinobi ou será afastada de você pelo vento. O próximo ataque feito nesta criatura tem vantagem. Além disso, como uma ação você se esconde em ventos divinos, ganhando vantagem em seu próximo teste de furtividade.
+                </p>
+            </section>
+            <section class="fingerwhistle" id="finger-whistle">
+                <h3>Finger Whistle</h3>
+                <ul>
+                    <li>3 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Você executa um apito alto como uma ação bônus. Isso atrai criaturas próximas a um raio de 18 metros de sua localização. Criaturas Bestas e Monstruosas a até 18 metros devem ser bem-sucedidas em um teste de resistência
+                    de Sabedoria contra sua CD de resistência de Shinobi ou ficarão enfurecidas e atacarão a criatura mais próxima, durando até seu bônus de proficiência de rodadas.
+                </p>
+            </section>
+            <section class="flamevent" id="flame-vent">
+                <h3>Flame Vent</h3>
+                <ul>
+                    <li>3 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Em seu braço você equipou um pequeno canhão que dispara uma rajada de fogo contra seus inimigos. Como uma ação, você pode forçar cada criatura com cone de 4,5 metros a fazer um teste de resistência de Destreza. Se
+                    falharem, eles sofrem 2d6 de dano de fogo. Com um sucesso, eles sofrem metade do dano
+                </p>
+                <h3>Em leveis altos</h3>
+                <p>No 5º nível, o dano inicial e o dano adicional do ataque com arma aumentam em 1d6 cada. Isso aumenta em mais 1d6 no 9º, 13º e 17º níveis.</p>
+            </section>
+            <section class="grapplinghook" id="grappling-hook">
+                <h3>Grappling Hook</h3>
+                <p>
+                    Seu braço está equipado com uma kunai e uma corda de luta de longa distância, projetadas para atingir superfícies à distância e atraí-lo para perto. Como uma ação bônus, você pode selecionar um espaço que você possa ver
+                    a até 18 metros de você, você dispara seu gancho neste espaço, puxando você e até uma criatura voluntária a até 1,5 metros de você para este novo local. Ataques de oportunidade são feitos em desvantagem contra você. Esta
+                    ferramenta não conta no número de ferramentas que você pode carregar.
+                </p>
+            </section>
+            <section class="loadedaxe" id="loaded-axe">
+                <h3>Loaded Axe</h3>
+                <ul>
+                    <li>2 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Você balança um machado robusto que está preso à sua prótese shinobi como uma ação. Escolha uma criatura que você possa ver em um raio de 1,5 metro. Essa criatura deve fazer um teste de resistência de Constituição contra
+                    sua CD de resistência do Shinobi. Em caso de falha, eles sofrem 1d8 de dano cortante, todos os escudos que empunham são quebrados e perdem CA igual ao seu bônus de proficiência até o final do próximo turno. Em caso de
+                    sucesso, eles sofrem apenas metade do dano.
+                </p>
+                <h3>Em leveis altos</h3>
+                <p>No 5º nível, o dano inicial e o dano bônus de ataque com arma aumentam em 1d8 cada. Isso aumenta em mais 1d8 no 9º, 13º e 17º níveis.</p>
+            </section>
+            <section class="loadedshuriken" id="loaded-shuriken">
+                <h3>Loaded Shuriken</h3>
+                <ul>
+                    <li>1 Origami da alma</li>
+                </ul>
+                <p>Você lança uma shuriken de sua prótese shinobi como uma ação. Esta shuriken causa 1d4 + Destreza de dano perfurante e tem um alcance de 20/60.</p>
+                <h3>Em leveis altos</h3>
+                <p>O dano ganha um d4 adicional no 5º (2d4), 9º (3d4), 13º (4d4) e 17º nível (5d4).</p>
+            </section>
+            <section class="loadedspear" id="loaded-spear">
+                <h3>Loaded Spear</h3>
+                <ul>
+                    <li>1 Origami da alma</li>
+                </ul>
+                <p>
+                    Você empurra uma lança retrátil em um inimigo que você pode ver dentro de 15 pés como uma ação. Essa criatura deve fazer um teste de resistência de Força contra a sua CD de resistência do Shinobi. Em caso de falha, ela
+                    sofre 1d6 de dano perfurante e, se for de tamanho médio ou menor, é puxada 10 pés para mais perto de você e fica prostrada. Em caso de sucesso, ela sofre apenas metade do dano.
+                </p>
+                <h3>Em níveis mais altos</h3>
+                <p>No 5º nível, o dano inicial e o dano bônus de ataque com arma aumentam em 1d6 cada. Isso aumenta em mais 1d6 nos 9º, 13º e 17º níveis.</p>
+            </section>
+            <section class="loadedumbrella" id="loaded-umbrella">
+                <h3>Loaded Umbrella</h3>
+                <ul>
+                    <li>1 Origami da alma</li>
+                </ul>
+                <p>
+                    Você se ajoelha e se protege com um guarda-chuva com nervuras de ferro, protegendo todo o seu corpo como uma ação bônus. Até o início do seu próximo turno, sua CA aumenta em um número igual ao seu bônus de proficiência.
+                    Enquanto estiver protegido, você não pode realizar ações de ataque ou ataques de oportunidade, e sua velocidade de movimento fica reduzida pela metade. Quando bloqueia um ataque à distância 3 vezes consecutivas com esta
+                    ferramenta, sem usar outras ferramentas, seu próximo ataque pode ser usado para projetar a força de volta no oponente. O ataque tem um alcance de 20/60, você não tem desvantagem ao usá-lo a menos de 5 pés do alvo, e
+                    causa um número de dados d4 igual ao seu bônus de proficiência em dano cortante.
+                </p>
+                <h3>Em níveis mais altos</h3>
+                <p>No 5º nível, o dado de dano aumenta para um d6. Você pode aumentá-lo em um nível de dado nos níveis 9, 13 e 17.</p>
+            </section>
+            <section class="mistraven" id="mist-raven">
+                <h3>Mist Raven</h3>
+                <ul>
+                    <li>2 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Seu braço é equipado com uma pena especial que lhe dá a capacidade de se teleportar em uma nuvem de névoa. Como reação a ser atingido por um ataque ou estar sujeito a um teste de resistência que causaria dano físico a
+                    você, você pode se teleportar até 30 pés. Se terminar seu movimento a até 5 pés de uma criatura, seu próximo ataque direcionado a ela tem vantagem. Esta prótese pode ser usada para evitar o feitiço Míssil Mágico.
+                </p>
+            </section>
+            <section class="sabimaru" id="sabimaru">
+                <h3>Sabimaru</h3>
+                <ul>
+                    <li>1 Origami da alma</li>
+                </ul>
+                <p>
+                    Seu braço está equipado com uma lâmina secreta revestida com veneno que você usa para envenenar rapidamente seus inimigos. Como uma ação, faça um ataque corpo a corpo com esta lâmina. Em um acerto, você causa 1d4 de dano
+                    cortante e 1d4 de dano de veneno. O alvo deve fazer um teste de resistência de Constituição. Em caso de falha, ele recebe a condição envenenada por 1 minuto. Se você atacar um celestial ou descendente de um celestial com
+                    esta lâmina, eles são considerados vulneráveis ao dano e fazem o teste com desvantagem. Este efeito se aplica a melhorias posteriores. Isso não se aplica a deuses maiores.
+                </p>
+                <h3>Em níveis mais altos</h3>
+                <p>
+                    No 5º nível, você pode fazer mais um ataque com esta prótese. Você ganha um ataque adicional com esta prótese nos níveis 9, 13 e 17. Custa um Origami da Alma adicional para cada ataque ímpar que você fizer com esta
+                    prótese.
+                </p>
+            </section>
+            <section class="shinobifirecracker" id="shinobi-firecracker">
+                <h3>Shinobi Firecracker</h3>
+                <ul>
+                    <li>2 Origamis das Almas</li>
+                </ul>
+                <p>
+                    Você solta uma rajada de fogos de artifício em um cone de 10 pés como uma ação bônus. Criaturas dentro deste cone devem ter sucesso em um teste de resistência de Constituição contra a sua CD de resistência do Shinobi ou
+                    ficarão atordoadas até o final do próximo turno delas. Bestas e monstruosidades rolam com desvantagem e duram até o seu bônus de proficiência em rodadas.
+                </p>
+            </section>
+        </div>
+        <div class="generalfeatures" id="general-features">
+            <section class="origamidasalma" id="origami-da-alma">
+                <h2>Origami da Alma</h2>
+                <p>
+                    A partir do 1º nível, as almas dos falecidos são atraídas por você. Elas permitem que você ative ferramentas instaladas em sua prótese shinobi e são representadas por Origamis das Almas. Você tem 2 Origamis das Almas e
+                    ganha mais à medida que atinge níveis mais altos, conforme mostrado na coluna Origami da Alma da tabela de Shinobi. Você nunca pode ter mais Origamis das Almas do que os mostrados na tabela para o seu nível. Você pode
+                    recuperar um Origami da Alma perdido matando um inimigo. Você recupera todos os Origamis da Alma gastos ao terminar um descanso longo.
+                </p>
+            </section>
+            <section class="cunningaction" id="cunning-action">
+                <h2>Cunning Action</h2>
+                <p>
+                    A partir do 2º nível, você pode usar uma ação bônus para realizar a ação Correr, Desengajar ou Esconder-se. Você ganha proficiência na habilidade de furtividade se ainda não a tiver. Dobre seu bônus de proficiência para
+                    ela se já a tiver.
+                </p>
+            </section>
+            <section class="schoolingarchetypes" id="schooling-archetypes">
+                <h2>Scholling Archetypes</h2>
+                <p>
+                    A partir do 3º nível, você escolhe um Arquétipo que definirá suas técnicas como um shinobi. Escolha entre Ashina, Prostética, Shinobi, Templo ou uma subclasse de guerreiro, detalhada no final da descrição da classe. A
+                    arte que você escolhe concede características a você no 3º nível e novamente nos níveis 7, 10, 15 e 18.
+                </p>
+            </section>
+            <section class="combatarts" id="combat-arts">
+                <h2>Combat Arts</h2>
+                <p>A partir do 3º nível, você aprende um ataque especializado que pode executar com sua(s) arma(s), com base no tipo de Arte que você aprendeu. Você pode substituir seus ataques por suas Artes Marciais.</p>
+                <p>Todas as Artes Marciais estão no final da classe.</p>
+            </section>
+            <section class="abilityscoreimprovement" id="ability-score-improvement">
+                <h2>Ability Score Increase</h2>
+                <p>
+                    Quando atinge o 4º nível e novamente nos níveis 6, 8, 12, 14, 16 e 19, você pode aumentar um atributo de sua escolha em 2, ou pode aumentar dois atributos de sua escolha em 1. Como de costume, você não pode aumentar um
+                    atributo acima de 20 usando esta característica.
+                </p>
+            </section>
+            <section class="superior-posture" id="superior-posture">
+                <h2>Superior Posture</h2>
+                <p>
+                    A partir do 5º nível, você aprendeu a esperar pacientemente por um oponente cometer um erro e capitalizar isso com uma precisão impiedosa. Você ganha proficiência na perícia Atletismo ou Acrobacia se ainda não a tiver.
+                </p>
+                <p>
+                    Como uma ação em seu turno, ou como uma reação a ser alvo de um ataque, enquanto empunha uma arma corpo a corpo com a qual você é proficiente, você pode entrar em uma postura de bloqueio até o início do seu próximo
+                    turno. Enquanto estiver nessa postura, quando uma criatura faz um ataque direcionado a você, você pode tentar bloquear o ataque. Se entrar nessa postura usando sua Ação, você ganha um bônus de 2d4 na sua CA contra o
+                    ataque desencadeante. Se entrar nessa postura como uma reação, esse bônus é de 1d4. Esse aumento na CA dura até o seu próximo turno.
+                </p>
+                <p>Independentemente do resultado do ataque, você faz imediatamente um teste de Atletismo ou Acrobacia contra o resultado do rolar de ataque do atacante.</p>
+                <p>
+                    Se o seu resultado for maior que o rolar de ataque do atacante, seu próximo ataque trata a CA da criatura atacada como reduzida por uma quantidade igual à diferença entre o seu resultado e o resultado do ataque deles. A
+                    CA deles é reduzida até o final do próximo turno deles.
+                </p>
+                <p>Se a CA deles for reduzida em 10 ou mais como resultado deste recurso, seu próximo ataque contra a criatura desencadeia um ataque furtivo, independentemente das circunstâncias ou condições.</p>
+                <p>A CA deles não pode ser reduzida se eles usaram ataques à distância.</p>
+            </section>
+            <section class="extraattack" id="extra-attack">
+                <h2>Extra Attack</h2>
+                <p>A partir do 5º nível, você pode atacar duas vezes, em vez de uma, sempre que realizar a ação de Ataque em seu turno.</p>
+            </section>
+            <section class="breakposture" id="break-posture">
+                <h2>Break Posture</h2>
+                <p>
+                    A partir do 5º nível, seus golpes implacáveis têm o potencial de desequilibrar seus inimigos. Quando atinge uma única criatura com três ataques consecutivos sem um único erro, você pode gastar 4 Origamis das Almas em uma
+                    tentativa de quebrar suas defesas. Seu alvo deve fazer um teste de resistência de Constituição contra sua CD de resistência do Shinobi. Em caso de falha, ele sofre dano adicional igual ao seu nível de Shinobi e fica
+                    atordoado até o final do próximo turno dele. Em caso de sucesso, ele sofre metade desse dano e não fica atordoado.
+                </p>
+            </section>
+            <section class="suppresspresence" id="suppress-presence">
+                <h2>Suppress Presence</h2>
+                <p>
+                    A partir do 6º nível, seus passos se tornam mais deliberados, e você se move como uma sombra. Você pode se esconder e ver em áreas de pouca luz. Além disso, você ganha 30 pés de visão no escuro e, quando realiza a ação
+                    Esconder-se, pode se esconder mesmo de alguém com visão cega ou sentido de tremor.
+                </p>
+            </section>
+            <section class="fighter-soul" id="fighter-soul">
+                <h2>Fighter Soul</h2>
+                <p>
+                    A partir do nível 7º, quando você cai em combate, sua sombra é invocada e luta por você até completar o teste de resistência contra a morte. Quando você tem sucesso ou morre, ela desaparece. Ela tem metade do seu HP
+                    máximo e CA 10 + Modificador de Destreza.
+                </p>
+            </section>
+            <section class="light-prayer" id="light-prayer">
+                <h2>Light Prayer</h2>
+                <p>
+                    Você reserva um momento para limpar sua mente e fortalecer sua determinação. A partir do 9º nível, você recupera Origamis das Almas iguais ao seu bônus de proficiência ao passar cinco minutos rezando. Além disso, você
+                    pode ganhar uma quantidade de Origamis das Almas temporários igual ao seu modificador de Sabedoria sacrificando uma quantidade de pontos de vida igual à metade do seu máximo de pontos de vida. Você só pode usar esta
+                    habilidade duas vezes antes de precisar de um descanso longo, momento em que os Origamis das Almas temporários desaparecem.
+                </p>
+            </section>
+            <section class="death-blow" id="death-blow">
+                <h2>Death Blow</h2>
+                <p>
+                    A partir do 11º nível, você sabe exatamente como desferir um golpe mortal. Quando uma criatura está atordoada ou paralisada, você pode tentar realizar um golpe mortal como uma ação bônus. Se a criatura tiver menos de 30
+                    pontos de vida, você a reduz a 0. Se ela tiver mais de 30 pontos de vida, ela sofre 3d10 pontos de dano, cujo tipo depende da arma que você está usando.
+                </p>
+            </section>
+            <section class="shinobi-combat" id="shinobi-combat">
+                <h2>Shinobi Combat</h2>
+                <p>
+                    A partir do 13º nível, você dominou a arte de empunhar sua arma em suas viagens. Ao atacar com armas das quais você é proficiente, você realiza ataques que transformam imunidades em resistências e resistências em dano
+                    normal.
+                </p>
+                <p>Além disso, você pode transformar armas de corte em armas perfurantes das quais você é proficiente.</p>
+            </section>
+            <section class="fighter-soul-plus" id="fighter-soul-plus">
+                <h2>Fighter Soul+</h2>
+                <p>A partir do nível 14º, sua sombra empunha uma espada fantasmagórica e usa uma armadura espectral, conferindo a ela uma CA de 15 + Modificador de Destreza.</p>
+            </section>
+            <section class="sharpen-sight" id="sharpen-sight">
+                <h2>Sharpen Sight</h2>
+                <p>
+                    A partir do 17º nível, você pode ver até 1 milha de distância sem dificuldade, podendo discernir detalhes finos como se estivesse olhando para algo a não mais que 100 pés de distância de você. Além disso, você pode ver
+                    dentro de 15 pés em condições de obscuridade intensa e tem vantagem em testes de Sabedoria (Percepção). Adicionalmente, você aprende uma técnica de respiração que permite que você respire debaixo d'água indefinidamente.
+                    Você ganha uma velocidade de natação igual à sua velocidade de movimento.
+                </p>
+            </section>
+            <section class="legendary-shinobi" id="legendary-shinobi">
+                <h2>Legendary Warrior</h2>
+                <p>
+                    A partir do 20º nível, você é conhecido como um Deus nas artes da guerra e do combate. Você aprendeu muitas coisas ao longo dos anos e dominou sua Especialização de Escola, sendo capaz de aprender uma Especialização de
+                    Escola adicional. Você aprende todas as características em sua 2ª Árvore de Habilidades.
+                </p>
+            </section>
+        </div>
+
+        <div class="tree-arts" id="tree-arts">
+            <h1>Tree Arts</h1>
+
+            <h2>Fazbear Arts</h2>
+            <p>
+                A arte de Fazbear é a de táticas de batalha hardcore. Um shinobi que estuda essa arte prefere ficar perto de seus inimigos, combatendo mortalmente com suas lâminas e atacando em cada abertura que o inimigo deixa. Eles
+                reconhecem seu braço protético como uma ferramenta valiosa, mas sabem que sua verdadeira força está em sua lâmina.
+            </p>
+
+            <h3>Descending Carp</h3>
+            <p>Desviar uma lâmina é o mesmo que uma carpa descendo de uma cachoeira. Sempre que reduzir a CA de alguém com o recurso de Postura Superior, você pode adicionar 1d4 ao total da redução da CA.</p>
+
+            <p>Ao atingir o 10º nível, a carpa começa a subir a cachoeira. Agora você pode adicionar 2d4 ao total reduzido da CA do alvo.</p>
+
+            <h3>Mikiri Counter</h3>
+            <p>
+                No 7º nível, se estiver empunhando uma arma corpo a corpo em sua mão principal, você pode usar sua reação para desviar um ataque se for atingido por um ataque corpo a corpo. Ao fazer isso, você pode reduzir o dano pelo dado
+                de arma + seu modificador de Destreza + seu nível de Sekiro.
+            </p>
+
+            <p>Se reduzir o dano a 0, você pode fazer um único ataque com arma corpo a corpo contra a criatura atacante como parte desta reação. No 11º nível, você pode transformar o ataque em um Golpe Mortal.</p>
+
+            <h3>Shinigami</h3>
+            <p>No 10º nível, sua habilidade com armas permite que, ao conseguir um acerto crítico com um ataque de arma, você ganhe um bônus no rolar de dano dessa arma igual ao seu nível nesta classe.</p>
+
+            <h3>Breath of Nature: Light</h3>
+            <p>
+                No 15º nível, você dominou a arte de golpear no momento certo, exalando arrependimentos e reafirmando seu núcleo. O número de ataques extras aumenta para três no 15º nível. Além disso, ao executar um Golpe Mortal, você ganha
+                um +1 na sua CA até o seu bônus de proficiência. Esse bônus dura até o final do combate.
+            </p>
+
+            <h3>Execution</h3>
+            <p>
+                No 18º nível, você atingiu o auge de sua esgrima, aprimorando o recurso de Ruptura de Postura. Não apenas o número de ataques necessários é reduzido para 2, mas o custo de Origami da Alma também diminui em 2, tornando mais
+                fácil executar consistentemente. Além disso, o recurso de Golpe Mortal causa 5d10 de dano e, se uma criatura tiver 50 pontos de vida, ela é reduzida a 0.
+            </p>
+
+            <h2>Artes Prostéticas</h2>
+
+            <p>
+                As artes prostéticas têm sido amplamente utilizadas por shinobis que perderam seus membros, substituindo-os por uma nova presa de alguma forma. Um shinobi que estuda essa arte aprecia a versatilidade proporcionada por
+                ferramentas prostéticas. Eles investem tempo no aprimoramento dessas ferramentas e as utilizam para dominar inimigos no campo de batalha.
+            </p>
+
+            <h3>Ciclo do Escultor</h3>
+            <p>
+                A partir do 3º nível, sua conexão e compreensão com sua prótese se fortalecem, adquirindo ainda mais conhecimento sobre os mecanismos internos da criação. O custo em Origamis das Almas de todas as suas ferramentas
+                prostéticas equipadas atualmente é reduzido em -1 (mínimo de 1). Além disso, você ganha proficiência em Ferramentas de Ferraria.
+            </p>
+
+            <h3>Modificações</h3>
+            <p>
+                No 3º nível, você aprendeu a aprimorar suas Ferramentas Prostéticas, melhorando suas capacidades. Você tem acesso a diferentes versões das ferramentas que já possui. A lista de atualizações disponíveis está abaixo. Você
+                ganha uma modificação de cada ferramenta neste nível. Você ganha modificações adicionais nos níveis 5, 9, 13 e 17. Você deve escolher as atualizações na ordem em que são listadas. As atualizações com ** no final são
+                modificações que não se beneficiam das atualizações anteriores. Elas contam como uma ferramenta separada nesse caso.
+            </p>
+
+            <h3>Prótese de Batalha</h3>
+            <p>
+                No 7º nível, você pode alternar perfeitamente entre o uso de sua arma e ferramentas prostéticas. Quando você usa a característica Ataque Extra encontrada anteriormente nesta classe, você pode substituir um de seus ataques
+                pelo uso de uma ferramenta prostética equipada que causa dano. Você ainda precisa gastar Origamis das Almas para usar essa ferramenta.
+            </p>
+
+            <h3>Presas e Lâminas</h3>
+            <p>
+                No 10º nível, você aprende a usar suas ferramentas prostéticas e sua arma em conjunto. Quando você atinge uma criatura com uma ferramenta prostética que causa dano, você pode adicionar seu bônus de proficiência ao dano.
+            </p>
+
+            <h3>Mão do Escultor</h3>
+            <p>
+                No 15º nível, você pode desequipar uma ferramenta prostética e equipar outra como uma ação bônus, e as próteses não-danificadas podem ser usadas como uma ação bônus ou reação quando estiverem equipadas.
+            </p>
+
+            <h3>Obra-prima do Escultor</h3>
+            <p>
+                No 18º nível, seu máximo de Origamis das Almas é aumentado em uma quantidade igual ao seu modificador de Sabedoria + bônus de proficiência. Além disso, você ganha 10 Origamis das Almas quando sacrifica metade de seu máximo
+                de PV usando sua característica Oração Leve e ganha 2 Origamis das Almas ao matar um inimigo.
+            </p>
+            <h2>Artes Shinobi</h2>
+
+            <h3>Assassinato Silencioso</h3>
+            <p>
+                Um Shinobi capaz de realizar assassinatos silenciosos e eficientes enquanto permanece indetectável. Essas artes ensinam as maneiras tradicionais do assassino.
+            </p>
+
+            <h3>Assassinatos Silenciosos</h3>
+            <p>
+                No 3º nível, uma vez por turno, você pode causar um dano extra de 1d6 (Tipo de Dano: o usado com "Assassinatos Silenciosos") a uma criatura que você acertar com um ataque. Isso só funciona se a criatura estiver surpresa, se
+                você tiver vantagem no ataque ou se estiver atacando no ar.
+            </p>
+
+            <p>
+                Esse dano aumenta para 2d6 no 7º nível, 3d6 no 12º nível e 4d6 no 17º nível.
+            </p>
+
+            <h3>Evasão</h3>
+            <p>
+                No 7º nível, você pode se esquivar habilmente de certos efeitos de área, como o fogo de um dragão vermelho ou uma magia de tempestade de gelo. Quando você está sujeito a um efeito que permite fazer um teste de resistência de
+                Destreza para receber apenas metade do dano, você não recebe nenhum dano se passar no teste de resistência e apenas metade do dano se falhar.
+            </p>
+
+            <h3>Ataque de Precisão</h3>
+            <p>
+                No 10º nível, seus ataques corpo a corpo têm um acerto crítico em um resultado natural de 19 ou 20. Sempre que você acertar criticamente em um ataque furtivo, você adiciona mais 3d6 ao dano. A chance de acerto crítico
+                aumenta para 18-20 e os dados de dano adicionais aumentam para 6d6 no 15º nível.
+            </p>
+
+            <h3>Assassinato</h3>
+            <p>
+                No 15º nível, você ganha acesso a uma das opções de ninjutsu abaixo. Você só pode usar essas técnicas em um inimigo que foi morto pelo seu dano de ataque furtivo. Como reação:
+
+                <strong>Bloodsmoke Ninjutsu:</strong> Você pode gastar 6 Origamis das Almas para usar o sangue deles como uma cortina de fumaça. Além disso, a bomba de fumaça preenche uma esfera com raio de 20 pés com uma nuvem espessa. A
+                esfera se espalha ao redor das esquinas, e sua área é fortemente obscurecida. Dura 1 minuto ou até que um vento de velocidade moderada ou maior (pelo menos 10 milhas por hora) a dissipe.
+
+                <strong>Puppeteer Ninjutsu:</strong> Você pode gastar 5 Origamis das Almas para transformá-los em seu boneco por um número de turnos igual ao seu Modificador de Sabedoria. Ele é encantado e opera com sua própria iniciativa.
+                Ele o trata e qualquer criatura que você designar como criaturas amigáveis. Ele ganha um número de Pontos de Vida temporários igual à metade de seu Máximo de Pontos de Vida enquanto seus Pontos de Vida originais ainda
+                estiverem em 0 ou abaixo. Se seus pontos de vida aumentarem acima de 0, a criatura é revivida, mas ainda encantada por você até o final da duração dessa técnica.
+
+                <strong>Bestowal Ninjutsu:</strong> Você pode gastar 7 Origamis das Almas para usar o sangue do seu oponente para aumentar o alcance da sua arma. Você ganha um alcance adicional de 10 pés para sua arma. Além disso, seus
+                ataques de arma causam 2d6 pontos adicionais de dano necrótico. Isso dura um número de turnos igual ao seu modificador de Sabedoria.
+            </p>
+
+            <p>
+                Além disso, você ganha outra técnica no 20º nível.
+            </p>
+
+            <h3>A Sombra</h3>
+            <p>
+                No 18º nível, você aprendeu como ser um assassino, mas também aprendeu a se adaptar a novos desafios. Você adiciona metade do seu bônus de proficiência a testes de resistência e verificações nas quais você não é proficiente.
+                Além disso, você pode usar a Evasão para testes de resistência de Força e Constituição.
+            </p>
+            <h2>Artes do Templo</h2>
+
+            <p>
+                Aqueles que estudam sob o mestre das Artes do Templo não se limitam apenas às suas lâminas e próteses. Eles também treinam seus corpos e suas capacidades físicas por meio das artes marciais. Aqueles que dominam essas artes
+                se tornam letais com ou sem suas armas. Através de seu treinamento, eles encontram um caminho para se tornarem Iluminados e Imortais.
+            </p>
+
+            <h3>Artes Marciais</h3>
+            <p>
+                No 3º nível, você é treinado em combate corpo a corpo.
+            </p>
+
+            <ul>
+                <li>Você pode usar Destreza em vez de Força para os testes de ataque e dano de seus ataques desarmados e armas com as quais você é proficiente.</li>
+                <li>Seus ataques desarmados causam 1d4 de dano; esse dano aumenta para 2d4 no 5º nível, 3d4 no 11º nível e 4d4 no 17º nível.</li>
+            </ul>
+
+            <h3>Devoção</h3>
+            <p>
+                No 7º nível, sua prática das artes marciais lhe dá maestria em estilos de combate que usam ataques desarmados e o aproxima da imortalidade. Você pode adicionar um bônus a todos os testes de resistência igual ao seu
+                modificador de Sabedoria (mínimo de 1). Além disso, você pode adicionar metade do seu bônus de proficiência a testes de resistência contra a morte e, se adicionar esses modificadores resultar em um resultado de 20 ou mais,
+                você trata a rolagem como se fosse um 20 natural. Você ganha os seguintes benefícios enquanto estiver desarmado ou empunhando apenas armas com as quais é proficiente que não sejam pesadas, e você não está usando armadura ou
+                empunhando um escudo:
+            </p>
+
+            <ul>
+                <li><strong>Salva de Golpes:</strong> Imediatamente após realizar a ação de Ataque em seu turno, você pode gastar 2 Origamis das Almas para realizar dois ataques desarmados como uma ação bônus.</li>
+                <li><strong>Defesa Paciente:</strong> Você pode gastar 2 Origamis das Almas para realizar a ação Esquivar como uma ação bônus em seu turno.</li>
+                <li><strong>Passo do Vento:</strong> Você pode gastar 2 Origamis das Almas para realizar a ação Desengajar ou Correr como uma ação bônus em seu turno, e sua distância de salto é dobrada pelo turno.</li>
+                <li>
+                    <strong>Permanecer no Lugar:</strong> Você pode gastar 2 Origamis das Almas para se proteger como uma ação bônus em seu turno. Enquanto estiver se protegendo, você recebe metade do dano de todos aqueles que o atingem, no
+                    entanto, você não pode se mover daquele local até o final do seu próximo turno.
+                </li>
+                <li>
+                    <strong>Desviar Mísseis:</strong> Como reação quando você é atingido por um ataque de arma à distância, você pode gastar 2 Origamis das Almas para desviar o míssil. Ao fazer isso, o dano que você sofre do ataque é
+                    reduzido pelo dano do Ataque Desarmado + seu modificador de Sabedoria + seu nível de Sekiro. Se você reduzir o dano a 0, você pode pegar o míssil se ele for pequeno o suficiente para segurar em uma mão e você tiver pelo
+                    menos uma mão livre. Você pode realizar a ação de Ataque em seu turno para lançar o míssil, que é considerado ter um alcance de 20/60 pés, a menos que seja declarado de outra forma.
+                </li>
+            </ul>
+
+            <h3>Exorcismo</h3>
+            <p>
+                No 10º nível, a quantidade de Origamis das Almas que você recebe da Oração Leve é duplicada. Você também ganha proficiência em testes de resistência de Constituição e tem vantagem em testes contra ser enfeitiçado,
+                amedrontado ou possuído.
+            </p>
+
+            <h3>Arroz da Criança Divina</h3>
+            <p>
+                No 15º nível, você pode formar uma tigela com as mãos e pedir pelo arroz do <strong>Golden Freddy</strong>. Se você não for perturbado por 1 hora, o arroz preencherá lentamente sua mão. Pode ser consumido por uma criatura
+                atualmente capaz de ingerir alimentos. Cura o alvo por 4d4 + Modificador de Sabedoria e pode purificar todas as condições. Tornando-se imune a essas condições até um descanso longo. O arroz estragará e será inutilizável após
+                8 horas. Além disso, você tem 1 carga desta habilidade. Todas as mudanças serão redefinidas após um descanso longo.
+            </p>
+
+            <h3>Perfeição Interior</h3>
+            <p>
+                No 18º nível, você mostrou maestria em mente, corpo e espírito por meio do treinamento, fortalecendo sua sombra. Você pode realizar uma reação adicional uma vez por turno. O número de vezes que você pode usar esta habilidade
+                é igual ao seu Modificador de Sabedoria (mínimo de 1). Quando você estiver caído, se sua sombra matar alguém, você ganha 1 ponto de vitória no teste de resistência à morte. Ela tem a sua vida máxima, e sua CA.
+            </p>
+        </div>
+
+        <div class="artesdecombate" id="artes-de-combate">
+            <h1>Arte de Combate</h1>
+
+            <h2>Artes de Combate</h2>
+
+            <p>No 3º nível, você aprende um ataque especializado que pode executar com sua(s) arma(s), com base no tipo de Arte que aprendeu. Você pode substituir seus ataques por suas Artes de Combate.</p>
+
+            <h3>Ichimonji</h3>
+            <p><em>(Pré-requisitos: Artes de Ashina)</em></p>
+            <p>
+                Uma vez por turno, você realiza 1 ataque de cima para baixo em uma criatura com sua arma. Se o ataque acertar, role 1d4 e adicione o resultado à sua CA, enquanto subtrai o resultado da CA do alvo. Essa redução dura até o
+                final do turno do alvo.
+            </p>
+
+            <h3>Corte Nightjar</h3>
+            <p><em>(Pré-requisitos: Artes de Prótese)</em></p>
+            <p>
+                Uma vez por turno, você realiza um giro mortal. Permitindo que você evite quaisquer ataques de oportunidade dentro do alcance. Você salta dentro de uma linha de 20 pés, permitindo atacar uma única criatura nessa linha, desde
+                que haja um espaço aberto.
+            </p>
+
+            <h3>Corte de Redemoinho</h3>
+            <p><em>(Pré-requisitos: Arte Shinobi)</em></p>
+            <p>Uma vez por turno, você realiza um ataque giratório. Faça um ataque corpo a corpo contra qualquer número de criaturas dentro de 5 pés de você, com uma rolagem de ataque separada para cada alvo.</p>
+
+            <h3>Golpe de Oração</h3>
+            <p><em>(Pré-requisitos: Artes do Templo)</em></p>
+            <p>
+                Uma vez por turno, você desencadeia uma saraivada de ataques rápidos e impede contra-ataques. Você realiza 2 ataques consecutivos desarmados e pode se mover até 5 pés para cada golpe em uma única criatura. Além disso, para
+                cada ataque, a criatura não pode usar sua Reação para realizar contra-ataques em sua direção.
+            </p>
+
+            <h3>Ichimonji Duplo</h3>
+            <p><em>(Pré-requisitos: Artes de Ashina e 7º nível)</em></p>
+            <p>
+                Uma vez por turno, você realiza 2 ataques consecutivos de cima para baixo em uma única criatura com sua arma. Você realiza 2 ataques separados. Para cada acerto, role 1d4 e adicione à sua CA e subtraia o resultado da CA do
+                alvo. Essa redução dura até o final do turno do alvo.
+            </p>
+
+            <h3>Corte Nightjar Reverso</h3>
+            <p><em>(Pré-requisitos: Artes de Prótese e 7º nível)</em></p>
+            <p>
+                Uma vez por turno, como uma ação bônus, você pode atacar uma criatura dentro de 5 pés de você. Se acertar ou errar, você pode pular uma linha de 15 pés para longe da criatura e evitar um ataque de oportunidade, desde que
+                haja um espaço para pousar.
+            </p>
+
+            <h3>Investida das Sombras</h3>
+            <p><em>(Pré-requisitos: Arte Shinobi e 7º nível)</em></p>
+            <p>
+                Por 3 Emblemas Espirituais, libere um avanço poderoso de longo alcance, então use o oponente perfurado como uma plataforma para saltar aos céus. Você se move em uma linha de 20 pés. Se houver uma criatura dentro da linha,
+                você para de se mover e pode atacar essa criatura. Se acertar, pode pular 10 pés no ar. Você só pode usar esta arte uma vez por rodada.
+            </p>
+
+            <h3>Golpe de Oração Exorcismo</h3>
+            <p><em>(Pré-requisitos: Artes do Templo e 7º nível)</em></p>
+            <p>
+                Uma vez por turno, você desencadeia uma saraivada de ataques rápidos e impede contra-ataques. Você realiza 3 ataques consecutivos desarmados e pode se mover até 5 pés para cada golpe em uma única criatura. Além disso, para
+                cada ataque, a criatura não pode usar sua Reação para realizar contra-ataques em sua direção.
+            </p>
+
+            <h3>Cruz Ashina</h3>
+            <p><em>(Pré-requisitos: Artes de Ashina e 13º nível)</em></p>
+            <p>
+                Por 2 Emblemas Espirituais, você atinge uma criatura em alta velocidade. Você pode usar uma ação bônus para entrar em uma postura embainhada. Você não pode realizar ataques usando a ação de ataque quando entra nesta postura.
+                Quando uma criatura faz um ataque contra você, você pode usar sua reação para fazer uma rolagem de ataque contra eles. Se sua rolagem de ataque for maior ou igual à rolagem do atacante, o ataque deles é desperdiçado e eles
+                sofrem dano igual à metade do seu dano de ataque sorrateiro e dano da arma.
+            </p>
+
+            <h3>Força Viva</h3>
+            <p><em>(Pré-requisitos: Artes de Prótese e 13º nível)</em></p>
+            <p>
+                Você pode imbuir sua arma com o poder de suas ferramentas protéticas. Uma vez por turno, você pode usar uma ação bônus para adicionar 2d6 de dano adicional que dura por rodadas iguais ao seu bônus de proficiência. O tipo de
+                dano depende das ferramentas protéticas que você tem equipadas. Ferramentas aplicáveis e seus tipos de dano são os seguintes:
+            </p>
+
+            <ul>
+                <li><strong>Flame Vent (Fogo)</strong></li>
+                <li><strong>Divine Abduction (Força)</strong></li>
+            </ul>
+
+            <p>
+                Além disso, quaisquer efeitos posteriores da prótese se aplicam à arma infundida. Por exemplo, usar Abdução Divina na arma lhe dará o efeito de virar uma pessoa. Você também pode inflamar o alvo a partir do vento da chama na
+                arma. Você pode usar diferentes variações dessas próteses.
+            </p>
+
+            <h3>Queda de Sombra</h3>
+            <p><em>(Pré-requisitos: Arte Shinobi e 13º nível)</em></p>
+            <p>
+                Por 3 Emblemas Espirituais, depois de saltar no ar com Investida das Sombras, você pode realizar um ataque de espada giratória ao descer. Gaste uma ação bônus para usar a criatura como um trampolim e faça um ataque giratório
+                com sua arma. O ataque é feito com vantagem.
+            </p>
+
+            <h3>Chute Saltador de Senpou</h3>
+            <p><em>(Pré-requisitos: Artes do Templo e 13º nível)</em></p>
+            <p>
+                Uma vez por turno, você pode usar sua ação para realizar 4 ataques desarmados. Se houver uma criatura voadora a 20 pés de altura, você pode atacá-la e forçá-la a fazer um teste de resistência de Constituição. Em caso de
+                falha, ela fica caída.
+            </p>
+        </div>
+		<div class="mushinart" id="mushin-art">
+	<h1>Mushin Art</h1>	
+		
+    <h2>Mushin Art</h2>
+
+    <p>Você atingiu um ponto na maestria das Artes em que pode combinar técnicas para criar técnicas ainda mais poderosas.</p>
+
+    <h3>Alto Monge</h3>
+    <p><em>(Pré-requisitos: 15º nível, Destreza e Sabedoria 20 ou superior)</em></p>
+    <p>Como uma ação, você pode realizar 7 ataques desarmados. Você pode substituir alguns desses ataques por um ataque de arma de sua escolha. Este ataque também pode afetar inimigos voadores que estejam a 20 pés acima de você. Se atingidos, eles devem fazer um teste de Constituição ou serem derrubados.</p>
+
+    <h3>Uma Mente</h3>
+    <p><em>(Pré-requisitos: 15º nível, Destreza 20 ou superior)</em></p>
+    <p>Por 4 Emblemas Espirituais, como uma ação, você cria vários cortes para eviscerar seus inimigos sem sequer mover sua espada para fora da bainha. Todos os inimigos dentro de um cone de 10 pés devem fazer um teste de resistência de Destreza com desvantagem contra seu CD de Shinobi. Uma criatura que falhar na resistência sofre 7d8 de dano de força e fica atordoada até o final do seu próximo turno. Em um salvamento bem-sucedido, uma criatura sofre metade do dano e não fica atordoada.</p>
+
+    <h3>Flash do Dragão</h3>
+    <p><em>(Pré-requisitos: 15º nível, Força 18 e Destreza 18 ou superior)</em></p>
+    <p>Por 5 Emblemas Espirituais, como uma ação, você executa um ataque incrivelmente rápido que resulta em uma poderosa onda de choque. Criaturas dentro de uma linha de 30 pés devem fazer um teste de resistência de Destreza contra seu CD de resistência de Shinobi. Em caso de falha, os alvos sofrem 10d12 de dano de força e são empurrados 20 pés para trás. Em um sucesso, eles sofrem metade do dano e não se movem. Você pode fazer um ataque contra a criatura mais próxima dentro da linha. Em um acerto bem-sucedido, eles automaticamente falham e sofrem o dano de rolagem da sua arma também. Este movimento pode ser usado uma vez por descanso longo.</p>
+
+    <h3>Passagem Flutuante</h3>
+    <p><em>(Pré-requisitos: Destreza 18 e Sabedoria 18 ou superior)</em></p>
+    <p>Uma vez por turno, você pode realizar 3 ataques. Você se move 5 pés para frente para cada ataque junto com o alvo. Este ataque atinge todas as criaturas que estão a 5 pés à sua frente.</p>
+
+    <h3>Passagem da Nuvem Espiral</h3>
+    <p><em>(Pré-requisitos: Passagem Flutuante e 15º nível)</em></p>
+    <p>Por 1 Emblema Espiritual por ataque, até um máximo de 3 ataques. Para cada acerto, quer acerte ou erre, você pode causar dano adicional de força igual ao seu bônus de proficiência + modificador de Força ou Destreza. Você se move 5 pés para frente para cada ataque junto com o alvo. Este dano adicional atinge todas as criaturas dentro de 10 pés de você.</p>
+	</div>
+	<div class="prostheticupgrade" id="prosthetic-upgrade">
+	<h1> Prosthetic Upgrades </h1>
+	    <h2>Atualizações Prostéticas</h2>
+
+    <h3>Atualizações Shuriken</h3>
+
+    <ol>
+        <li>
+            <strong>Spinning Shurikens:</strong> Você aumenta o poder do shuriken adicionando força rotacional a ele. Você aumenta o tamanho do dado de dano deste shuriken em 1.
+        </li>
+        <li>
+            <strong>Gouging Top:</strong> Você pode perfurar as defesas de um inimigo. Se este ataque acertar, seu oponente deve fazer um teste de Constituição ou ter sua CA reduzida em uma quantidade igual ao seu modificador de Sabedoria. Essa redução de CA dura até o final do próximo turno do seu oponente.
+        </li>
+        <li>
+            <strong>Lazulite Shuriken:</strong> Este shuriken não diminui a velocidade mesmo depois de atingir. Se você errar este ataque, você causa metade do dano, arredondado para baixo. Se houver criaturas atrás do alvo, dentro do alcance do seu shuriken, você pode mirar nelas também com uma rolagem de ataque separada.
+        </li>
+        <li>
+            <strong>Phantom Kunai:</strong> Por 2 Emblemas Espirituais, você pode fazer uma rolagem de ataque. Em seguida, borboletas igual ao seu modificador de Sabedoria brotarão da kunai, voando em direção ao alvo e atingindo-o simultaneamente. O ataque causa 1d4 para cada borboleta. O custo permanece o mesmo, independentemente da funcionalidade de Sculptor's Karma.
+        </li>
+        <li>
+            <strong>Sen Throw:</strong> Por 2 Emblemas Espirituais, você pode fazer uma rolagem de ataque que causa dano com base em quanto ouro você tem. 1-250gp, você causa 1d4 de dano contundente e gasta 1gp. 251-500gp, você causa 3d6 de dano contundente e gasta 5gp. 501+gp, você causa 5d8 de dano contundente e gasta 10gp. O custo permanece o mesmo, independentemente da funcionalidade de Sculptor's Karma.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Machado</h3>
+
+    <ol>
+        <li>
+            <strong>Spring-Load Axe:</strong> Agora você pode quebrar escudos grandes de tamanho Grande. Você agora pode mirar em criaturas dentro de um raio de 5 pés centrado em você.
+        </li>
+        <li>
+            <strong>Sparking Axe:</strong> Se um alvo falhar no teste de Constituição, eles são incendiados, sofrendo 1d6 de dano de fogo no início de seus turnos. O alvo pode usar uma ação para apagar o fogo. Se óleo foi jogado no alvo, então eles sofrem 2d6 de dano de fogo no início de seus turnos. Dura 1 minuto.
+        </li>
+        <li>
+            <strong>Lazulite Axe:</strong> Você pode mirar em criaturas dentro de um raio de 5 pés centrado em você. Quer você acerte ou erre, ilusões fracas que estão dentro de 60 pés de você, ou ilusões de 4º nível ou inferiores, são dissipadas. Para ilusões mais fortes e magias de ilusão, faça um teste de Sabedoria. Em caso de sucesso, a ilusão é dissipada.
+        </li>
+    </ol>
+
+   <h3>Atualizações de Firecracker</h3>
+
+    <ol>
+        <li>
+            <strong>Spring-Load Firecracker:</strong> Agora você pode mirar em criaturas em um raio de 10 pés centrado em você.
+        </li>
+        <li>
+            <strong>Long-Spark:</strong> Seu valor de CD de salvamento é aumentado em uma quantidade igual à metade do seu modificador de Destreza arredondado para cima.
+        </li>
+        <li>
+            <strong>Purple Fume Spark:</strong> Se uma criatura falhar no teste de resistência, ela sofre 2d4 de dano e sua CA é reduzida pelo dano que ela sofre. Esta redução de CA dura por um número de rodadas igual ao seu mod. de Sabedoria.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Lança</h3>
+
+    <ol>
+        <li>
+            <strong>Thrust Type:</strong> Se a criatura falhar no teste de resistência, você e ela são empurrados 15 pés para a frente. Qualquer criatura que o alvo atingir deve fazer um teste de Destreza ou sofrer metade do dano e ser empurrada junto com a criatura.
+        </li>
+        <li>
+            <strong>Cleave Type:</strong> Agora você pode mirar em criaturas dentro de um cone de 15 pés e esta lança causa dano cortante.
+        </li>
+        <li>
+            <strong>Spiral Spear:</strong> Você causa um dano adicional de 2d6 perfurante com a lança.
+        </li>
+        <li>
+            <strong>Leaping Flame:</strong> Você pode mirar em criaturas dentro de um cone de 15 pés e esta lança causa dano cortante. Ao ser atingido por esta lança, eles sofrem um dano adicional de 2d6 de dano cortante e devem fazer um teste de Constituição. Em caso de falha, são incendiados e sofrem 1d6 de dano de fogo no início de seus turnos. Se eles tiverem óleo derramado sobre eles, o dano se torna 2d6 de dano de fogo. Eles podem usar uma ação para apagar a chama. Dura 1 minuto. Esta atualização custa 2 emblemas espirituais, independentemente da redução de sua funcionalidade Sculptor's Karma.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Flame Vent</h3>
+
+    <ol>
+        <li>
+            <strong>Spring-Load Flame Vent:</strong> Se o alvo falhar no teste de resistência, ele é derrubado e incendiado. Eles sofrem 1d6 de dano de fogo e 2d6 se tiverem óleo derramado sobre eles. O alvo pode apagar o fogo com uma ação. A condição de incêndio dura 1 minuto. Quando você usa esta modificação, você é empurrado para trás 10 pés.
+        </li>
+        <li>
+            <strong>Okinaga's Flame Vent:</strong> Você pode mirar em uma criatura para um ataque à distância. Se atingir, você causa o dano do flame vent. Como uma ação, você pode rolar continuamente 2d6 de dano de fogo no alvo atingido pelo ataque. Você deve manter a concentração neste ataque e deve gastar 1 emblema espiritual a cada turno para manter esse ataque. Se você não usar uma ação para manter o ataque, ele termina.
+        </li>
+        <li>
+            <strong>Lazulite Sacred Flame:</strong> Você pode mirar em uma criatura para um ataque à distância. Se atingir, você causa o dano do flame vent. Como uma ação, você pode rolar continuamente 2d6 de dano de fogo no alvo atingido pelo ataque. Você deve manter a concentração neste ataque e deve gastar 1 emblema espiritual a cada turno para manter esse ataque. Se você não usar uma ação para manter o ataque, ele termina. O dano do ataque inicial e o dano causado posteriormente são duplicados se a criatura for morta-viva ou um demônio.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Guarda-chuva</h3>
+
+    <ol>
+        <li>
+            <strong>Loaded Umbrella - Magnet:</strong> Se uma criatura fizer um ataque contra você enquanto o guarda-chuva estiver fora, você pode usar sua característica de Postura Superior gastando 1 Emblema Espiritual e uma reação. Ao usar a característica de Postura Superior com o guarda-chuva para fora, você não rola d4s para aumentar sua CA. Além disso, você é imune a dano contundente, perfurante e cortante.
+        </li>
+        <li>
+            <strong>Phoenix's Lilac Umbrella:</strong> Enquanto o guarda-chuva estiver fora, você é imune a magias e efeitos que o encantariam ou assustariam. Se você liberar a energia armazenada no guarda-chuva enquanto tiver esta modificação, você pode adicionar um número de dados de dano igual à metade do seu modificador de Sabedoria arredondado para baixo e agora causar o dobro dos dados de dano a criaturas mortas-vivas e demônios. Além disso, se um ataque errar sua CA enquanto o guarda-chuva estiver fora, você pode causar dano à criatura igual ao seu bônus de proficiência.
+        </li>
+        <li>
+            <strong>Suzaku's Lotus Umbrella:</strong> Ao liberar a energia armazenada no guarda-chuva, você pode alterar o tipo de dano para fogo e pode causar dados de dano adicionais iguais à metade do seu modificador de Sabedoria arredondado para baixo. Você pode usar sua característica de Postura Superior enquanto este guarda-chuva estiver fora gastando 1 Emblema Espiritual e uma reação. Ao usar a característica de Postura Superior com o guarda-chuva, você não rola nenhum d4 para aumentar sua CA. Além disso, você é imune a dano de fogo, contundente, perfurante e cortante enquanto o guarda-chuva estiver fora.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Sabimaru</h3>
+
+    <ol>
+        <li>
+            <strong>Improved Sabimaru:</strong> Se você ainda tiver um Ataque Extra depois de usar Sabimaru, uma vez por turno, você pode usar esse Ataque Extra para usar Sabimaru novamente. Esses ataques são feitos com uma penalidade de -5.
+        </li>
+        <li>
+            <strong>Piercing Sabimaru:</strong> Se você errar um ataque, o ataque causa metade do dano. Além disso, a cada terceiro ataque que acertar com Sabimaru, você pode subtrair 1 da CA do alvo até o início do seu próximo turno. A redução de CA dura até o início do próximo turno do alvo.
+        </li>
+        <li>
+            <strong>Lazulite Sabimaru:</strong> Você pode mirar em criaturas com um cone de 10 pés com o teste de resistência de Sabimaru, espalhando uma névoa com cada ataque. Você obtém a funcionalidade Improved Sabimaru com esta ferramenta.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Mist Raven</h3>
+
+    <ol>
+        <li>
+            <strong>Aged Feather Mist Raven:</strong> Se você for derrubado ou empurrado, pode usar uma reação para se teleportar 30 pés para um espaço desocupado.
+        </li>
+        <li>
+            <strong>Great Feather Mist Raven:</strong> Ao usar esta ferramenta prostética, criaturas que estiverem dentro da trilha que você deixa ao se teleportar sofrem dano igual ao seu modificador de Sabedoria.
+        </li>
+    </ol>
+
+    <h3>Atualizações de Divine Abduction</h3>
+
+    <ol>
+        <li>
+            <strong>Double Divine Abduction:</strong> Agora você pode mirar em 2 criaturas ao usar esta ferramenta.
+        </li>
+        <li>
+            <strong>Golden Vortex:</strong> Se a criatura falhar no teste de resistência, ela deixa cair 5 peças de ouro. Isso só pode afetar uma criatura uma vez por descanso longo.
+        </li>
+    </ol>
+
+    <h3>Flauta de Dedo</h3>
+
+    <ol>
+        <li>
+            <strong>Mountain Echo:</strong> Agora você pode atrasar o som da flauta até o início do seu próximo turno. Além disso, você pode fazer a flauta visar apenas uma criatura.
+        </li>
+        <li>
+            <strong>Malcontent:</strong> Ao usar a flauta, criaturas mortas-vivas e demônios dentro do alcance também devem fazer um teste de resistência de Sabedoria. Em caso de falha, eles são atordoados até o início do seu próximo turno. Isso só pode afetar a mesma criatura 3 vezes por descanso longo.
+        </li>
+    </ol>
+</div>
+
+</body>
+
+</html>
